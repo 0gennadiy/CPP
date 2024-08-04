@@ -23,12 +23,12 @@ int main()
 	}
 	else if (z == '*')
 	{
-		znak == 3;
+		znak = 3;
 		cout << "\t\t\tYOU HAVE CHOSEN \"*\"." << endl;
 	}
 	else if (z == '/')
 	{
-		znak == 4;
+		znak = 4;
 		cout << "\t\t\tYOU HAVE CHOSEN \"/\"." << endl;
 	}
 	else if (z == '%')
