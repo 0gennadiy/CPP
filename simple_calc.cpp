@@ -46,10 +46,10 @@ int main()
 		cout << a << " - " << b << " = " << a - b << endl;
 		break;
 	case 3:
-		cout << a << " * " << b << " = " << a + b << endl;
+		cout << a << " * " << b << " = " << a * b << endl;
 		break;
 	case 4:
-		cout << a << " / " << b << " = " << a + b << endl;
+		cout << a << " / " << b << " = " << (double)a / b << endl;
 		break;
 	case 5:
 /*					CHETNOST/NECHETNOST																		*/
