@@ -3,77 +3,76 @@ using namespace std;
 
 int main()
 {
-	setlocale(LC_ALL, "Rus");
-
 	int znak = 0, a, b;
 	char z;
-	cout << "ÂÂÅÄÈÒÅ ÄÂÀ ×ÈÑËÀ: " << endl;
+	cout << "\t\t\tENTER TWO NUMBERS: " << endl;
 	cin >> a >> b;
 
-	cout << "+ - ÑÓÌÌÀ\n- - ÐÀÇÍÎÑÒÜ\n* - ÏÐÎÈÇÂÅÄÅÍÈÅ\n/ - ×ÀÑÒÍÎÅ\n% - ÏÐÎÂÅÐÊÀ ÍÀ ×¨ÒÍÎÑÒÜ\nÂÛÁÅÐÈÒÅ ÄÅÉÑÒÂÈÅ: " << endl;
+	cout << "\t\t\t+\n\t\t\t-\n\t\t\t*\n\t\t\t/\n\t\t\t%\n\t\t\tCHOOSE AN ACTION: " << endl;
 	cin >> z;
 
 	if (z == '+')
 	{
 		znak = 1;
-		cout << "ÂÛ ÂÛÁÐÀËÈ ÑÓÌÌÓ ×ÈÑÅË." << endl;
+		cout << "\t\t\tYOU HAVE CHOSEN \"+\"." << endl;
 	}
 	else if (z == '-')
 	{
 		znak = 2;
-		cout << "ÂÛ ÂÛÁÐÀËÈ ÐÀÇÍÎÑÒÜ ×ÈÑÅË." << endl;
+		cout << "\t\t\tYOU HAVE CHOSEN \"-\"." << endl;
 	}
 	else if (z == '*')
 	{
 		znak == 3;
-		cout << "ÂÛ ÂÛÁÐÀËÈ ÏÐÎÈÇÂÅÄÅÍÈÅ ×ÈÑÅË." << endl;
+		cout << "\t\t\tYOU HAVE CHOSEN \"*\"." << endl;
 	}
 	else if (z == '/')
 	{
 		znak == 4;
-		cout << "ÂÛ ÂÛÁÐÀËÈ ×ÀÒÑÍÎÅ ×ÈÑÅË." << endl;
+		cout << "\t\t\tYOU HAVE CHOSEN \"/\"." << endl;
 	}
 	else if (z == '%')
 	{
 		znak = 5;
-		cout << "ÂÛ ÂÛÁÐÀËÈ ÏÐÎÂÅÐÊÓ ÍÀ ×¨ÒÍÎÑÒÜ." << endl;
+		cout << "\t\t\tYOU HAVE CHOSEN \"%\"." << endl;
 	}
 
 	switch (znak)
 	{
 	case 1:
-		cout << "ÑÓÌÌÀ ×ÈÑÅË " << a << " È " << b << " ÐÀÂÍÀ " << a + b << endl;
+		cout << a << " + " << b << " = " << a + b << endl;
 		break;
 	case 2:
-		cout << "ÐÀÇÍÎÑÒÜ ×ÈÑÅË " << a << " È " << b << " ÐÀÂÍÀ " << a - b << endl;
+		cout << a << " - " << b << " = " << a - b << endl;
 		break;
 	case 3:
-		cout << "ÏÐÎÈÇÂÅÄÅÍÈÅ ×ÈÑÅË " << a << " È " << b << " ÐÀÂÍÎ " << a * b << endl;
+		cout << a << " * " << b << " = " << a + b << endl;
 		break;
 	case 4:
-		cout << "×ÀÑÒÍÎÅ ×ÈÑÅË " << a << " È " << b << " ÐÀÂÍÎ " << a / b << endl;
+		cout << a << " / " << b << " = " << a + b << endl;
 		break;
 	case 5:
+/*					CHETNOST/NECHETNOST																		*/
 		if (a % 2 == 0)
 		{
-			cout << "×ÈÑËÎ " << a << " ×¨ÒÍÎÅ." << endl;
+			cout << "\t\t\tNUMBER " << a << " IS EVEN." << endl;
 		}
 		else
 		{
-			cout<< "×ÈÑËÎ " << a << " ÍÅ×¨ÒÍÎÅ." << endl;
+			cout << "\t\t\tNUMBER " << a << " IS ODD." << endl;
 		}
 		
 		if (b % 2 == 0)
 		{
-			cout << "×ÈÑËÎ " << b << " ×¨ÒÍÎÅ." << endl;
+			cout << "\t\t\tNUMBER " << b << " IS EVEN." << endl;
 		}
 		else
 		{
-			cout << "×ÈÑËÎ " << b << " ÍÅ×¨ÒÍÎÅ." << endl;
+			cout << "\t\t\tNUMBER " << b << " IS ODD." << endl;
 		}
 		break;
 	default:
-		cout << "ÂÛÁÐÀÍÎ ÍÅÎÏÐÅÄÅË¨ÍÍÎÅ ÄÅÉÑÒÂÈÅ.";
+		cout << "\t\t\tUNDEFINED ACTION SELECTED.";
 		break;
 	}
 
